@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+    width: 60vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(36, 35, 33);
+}
+
+.container {
+    padding: 1vh 1vw 1vh 1vw;
+    width: 50vw;
+    height: 70vh;
+    margin: auto auto;
+    background-color: rgb(20, 4, 7);
+}
+
+.circle {
+    
+    position: relative;
+    height: 7vh;
+    width: 4vw;
+    background-color: rgb(255, 255, 255);
+    animation: move 6s infinite linear;
+}
+
+@keyframes move {
+    from {
+        top: 1vh;
+        left: 1vw;
+    }
+    25% {
+        top: 1vh;
+        left: 46vw;
+        background: rgb(255, 0, 0);
+    }
+    50% {
+        top: 63vh;
+        left: 46vw;
+        background: rgb(255, 255, 255);
+    }
+    75% {
+        top: 63vh;
+        left: 1vw;
+        background: rgb(255, 0, 0);
+    }
+    to {
+        top: 1vh;
+        left: 1vw;
+        background:white;
+    }
+}
+
